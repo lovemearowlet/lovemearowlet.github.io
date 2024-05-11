@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <title>Click Milo</title>
-<link rel="icon" type="image/png" href="lovemearowlet.github.io/Games/ClickMilo/MiloPics/milo_icon.png">
 <style>
 body {
 	background-color: #C48145;
@@ -13,28 +12,47 @@ h1 {
 	}
 h3 {
 	font-family: Arial;
-	font-size: 32px;
+	font-size: 22;
 	color: #292827;
 	text-align: center;
 	}
-h4, div {
+h4 {
 	align: center;
 	text-align: center;
 	font-family: Arial;
-	font-size: 32px;
+	font-size: 32;
 	}
-image {
-	size: 800x800;
-	align: center;
-	
+div {
+	text-align: center;
+	font-family: Arial;
+	font-size: 32;
 	}
+.image-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    }
+.image-btn img{
+    display: block; /* to remove extra space below image */
+    }
 </style>
 
 <body>
 <h1>Click Milo Game (Pre-Release Alpha 0.1)</h1>
 <h3>A Clicker Game by lovemearowlet</h3>
-<h4>Milo Points:</h4><div id="counter">0</div>
-<input type="image" src="lovemearowlet.github.io/Games/ClickMilo/MiloPics/milo1.png"/>
+<h4>Milo Points:<span id="display">0</span></h4>
+<button type="button" class="image-btn">
+    <img src="lovemearowlet.github.io/Games/ClickMilo/MiloPics/milo9.png" width="250">
+</button>
+<script type="text/javascript">
+	let count = 0;
+	let btn = document.getElementByType("button");
+	let disp = document.getElementById("display");
+	
+	btn.onclick = function () {
+				count++;
+	disp.innerHTML = count;
+	}
 </body>
 
 
