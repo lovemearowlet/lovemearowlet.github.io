@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>SP649's official site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap">
+ <style>
+    body, button {
+      font-family: "Ubuntu Mono", sans-serif;
+      background-color:  #94734d;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+    h2, h3, h4, h5, h6, h7, h8, h9, button {
+      font-size: 1.3em;
+    }
+    p, button, a {
+      font-size: 1.2em;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      border: none;
+      background-color: #ddd;
+      cursor: pointer;
+    }
+  body {
+    background-color:  #94734d;  
+  }
+</style>
+</head>
+<body>
+
+  <button id="backToTop">Back to Top</button>
+
+  <script>
+    const backToTopButton = document.getElementById('backToTop');
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+<center><h1>GUI Portage SP's Version</h1>
+  <h2>What is it?</h2>
+
+</center>
+
+
+</body>
